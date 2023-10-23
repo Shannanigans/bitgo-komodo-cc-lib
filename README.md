@@ -166,7 +166,7 @@ wasm-pack build
 Now go to bitgo-komodo-cc-lib repo dir.<br>
 Rebuild sources and build the test app for browser:
 ```
-npm run build
+npm install
 browserify ./samples/ccfaucetpoc.js --standalone faucet -o ccfaucetpocbr.js
 ```
 Copy created ccfaucetpocbr.js into your webpack dir.
