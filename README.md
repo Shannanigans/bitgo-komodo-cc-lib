@@ -157,16 +157,16 @@ Set again the nightly rust version for this repo:
 rustup default nightly
 ```
 
-Change to ./node_modules/cryptoconditions-js subdir and run the following command to build cryptconditions lib wasm for browserify.
+Change to ./node_modules/cryptoconditions-js subdir and run the following command to build cryptoconditions lib wasm (for use with browserify tool):
 ```
 cd ./node_modules/cryptoconditions-js
 wasm-pack build
 ```
+Note that if you use npm [@tokel](https://www.npmjs.com/package/@tokel/cryptoconditions-js) version of the cryptocondition-js lib you do not need to build it, it is already precompiled.
 
 Now go to bitgo-komodo-cc-lib repo dir.<br>
-Rebuild sources and build the test app for browser:
+Build the test app for browser:
 ```
-npm install
 browserify ./samples/ccfaucetpoc.js --standalone faucet -o ccfaucetpocbr.js
 ```
 Copy created ccfaucetpocbr.js into your webpack dir.
