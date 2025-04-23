@@ -483,6 +483,32 @@ module.exports = {
       //'51.38.124.215:29404'
     ],
 
+    KMD: {
+      messagePrefix: '\u0019Komodo Signed Message:\n',
+      bech32: 'R',
+      bip32: getDefaultBip32Mainnet(),
+      pubKeyHash: 0x3c,
+      scriptHash: 0x55,
+      cryptoconditionHash: 0x1c,
+      wif: 0xbc,
+      consensusBranchId: {
+        1: 0x00,
+        2: 0x00,
+        3: 0x5ba81b19,
+        4: 0x76b809bb, // (old Sapling branch id - used in kmd)
+        // 4: 0x2bb40e60
+        // 4: 0xf5b9230b
+      },
+      coin: 'zec', // or 'kmd' if updating coins.js
+      komodoAssetNet: false,
+      protocolVersion: 170009,
+      magic: 0x7770e48d,
+      dnsSeeds: ['seeds.komodo.stakepool.network', 'seeds.komodo.community'],
+      staticPeers: [], // Add peers, e.g., '18.189.25.123:7771'
+      webSeeds: [],
+      messages: kmdmessages.kmdMessages,
+    },
+
     // to connect over websockets:
     webSeeds: [
       // 'wss://localhost:8192'
