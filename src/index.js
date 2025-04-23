@@ -26,7 +26,7 @@ module.exports = {
   kmdMessages: require('../net/kmdmessages'),
   NspvPeerGroup: require('../net/nspvPeerGroup'),
   peer: require('../net/peer'),
-  general: require('../cc/general'),
-  cctokensv2: require('../cc/cctokensv2'),
+  // general: require('../cc/general'),
+  // cctokensv2: require('../cc/cctokensv2'),
   nspvConnect: require('../net/connect'),
 };
